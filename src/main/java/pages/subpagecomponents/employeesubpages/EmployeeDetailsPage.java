@@ -19,6 +19,6 @@ public class EmployeeDetailsPage {
 
     public void verifyEmployeeDetails(String employeeFullName) {
         checkIfPageIsLoaded();
-        HEADER.shouldHave(visible).shouldHave(text(employeeFullName));
+        HEADER.shouldBe(visible).shouldHave(text(employeeFullName));
     }
 }
